@@ -1,54 +1,109 @@
-// Sound effects
-const sounds = {
-    click: new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ'),
-    correct: new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ'),
-    wrong: new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ'),
-    success: new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ'),
-    page: new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ')
-};
+// Professional Sound System - Using Web Audio API
+class SoundSystem {
+    constructor() {
+        this.audioContext = null;
+        this.soundEnabled = true;
+        this.initAudioContext();
+    }
 
-// Initialize sound URLs (using base64 encoded beep sounds)
-function initSounds() {
-    // Simple beep sounds
-    const beep1 = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ' + btoa(String.fromCharCode(...new Array(1000).fill(0)));
-    const beep2 = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ' + btoa(String.fromCharCode(...new Array(1500).fill(0)));
-    const beep3 = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ' + btoa(String.fromCharCode(...new Array(2000).fill(0)));
-    
-    sounds.click.src = beep1;
-    sounds.correct.src = beep2;
-    sounds.wrong.src = beep3;
-    sounds.success.src = beep2;
-    sounds.page.src = beep1;
+    initAudioContext() {
+        try {
+            // Create audio context on user interaction (browser requirement)
+            window.addEventListener('click', () => {
+                if (!this.audioContext) {
+                    this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    console.log("🎵 Audio system ready!");
+                }
+            }, { once: true });
+        } catch (e) {
+            console.log("Audio not supported:", e);
+        }
+    }
+
+    // Safe play method
+    playSound(type) {
+        if (!this.soundEnabled) return;
+        
+        // If audio context isn't ready, create it
+        if (!this.audioContext) {
+            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        
+        try {
+            switch(type) {
+                case 'click':
+                    this.playTone(800, 0.1, 'sine');
+                    break;
+                case 'correct':
+                    this.playTone(1200, 0.2, 'sine');
+                    setTimeout(() => this.playTone(1500, 0.15, 'sine'), 100);
+                    break;
+                case 'wrong':
+                    this.playTone(400, 0.3, 'square');
+                    setTimeout(() => this.playTone(300, 0.2, 'square'), 150);
+                    break;
+                case 'success':
+                    this.playTone(523.25, 0.15, 'sine'); // C5
+                    setTimeout(() => this.playTone(659.25, 0.15, 'sine'), 150); // E5
+                    setTimeout(() => this.playTone(783.99, 0.15, 'sine'), 300); // G5
+                    break;
+                case 'page':
+                    this.playTone(600, 0.15, 'sine');
+                    break;
+            }
+        } catch (e) {
+            console.log("Sound error:", e);
+        }
+    }
+
+    playTone(freq, duration, waveType) {
+        if (!this.audioContext) return;
+        
+        const oscillator = this.audioContext.createOscillator();
+        const gainNode = this.audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(this.audioContext.destination);
+        
+        oscillator.frequency.value = freq;
+        oscillator.type = waveType;
+        
+        // Smooth volume envelope
+        const now = this.audioContext.currentTime;
+        gainNode.gain.setValueAtTime(0.3, now);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, now + duration);
+        
+        oscillator.start(now);
+        oscillator.stop(now + duration);
+    }
+
+    toggle() {
+        this.soundEnabled = !this.soundEnabled;
+        if (this.soundEnabled) {
+            this.playSound('click');
+        }
+        return this.soundEnabled;
+    }
 }
 
-// Sound control
-let soundEnabled = true;
+// Initialize global sound system
+const soundSystem = new SoundSystem();
 
+// Helper functions to maintain compatibility
 function playSound(soundName) {
-    if (!soundEnabled) return;
-    
-    try {
-        sounds[soundName].currentTime = 0;
-        sounds[soundName].play().catch(e => console.log("Sound play failed:", e));
-    } catch (e) {
-        console.log("Sound error:", e);
-    }
+    soundSystem.playSound(soundName);
 }
 
 function toggleSound() {
-    soundEnabled = !soundEnabled;
+    const isEnabled = soundSystem.toggle();
     const toggleBtn = document.getElementById('soundToggle');
     if (toggleBtn) {
-        toggleBtn.innerHTML = soundEnabled ? 
+        toggleBtn.innerHTML = isEnabled ? 
             '<i class="fas fa-volume-up"></i> Sound ON' : 
             '<i class="fas fa-volume-mute"></i> Sound OFF';
-        toggleBtn.classList.toggle('active', soundEnabled);
-        
-        // Play toggle sound if turning on
-        if (soundEnabled) playSound('click');
+        toggleBtn.classList.toggle('active', isEnabled);
     }
 }
-
 // MCQ Data for all chapters (updated with all 10 chapters)
 const mcqData = {
     "ch1": {
