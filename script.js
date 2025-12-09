@@ -779,7 +779,6 @@ const chapters = [
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-    initSounds();
     initializeChaptersGrid();
     createMCQPages();
     addSoundToggle();
