@@ -104,7 +104,7 @@ function toggleSound() {
         toggleBtn.classList.toggle('active', isEnabled);
     }
 }
-// MCQ Data for all chapters (updated with all 10 chapters)
+// MCQ Data for all chapters
 const mcqData = {
     "ch1": {
         title: "Chapter 1: Chemical Reactions and Equations",
