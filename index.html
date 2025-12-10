@@ -1,39 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 10 Science MCQs Master</title>
+    <title>کلاس دہم اردو MCQ ٹیسٹ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Main Menu -->
-        <div class="header" id="mainMenu">
-            <h1><i class="fas fa-atom"></i> Class 10 Science MCQs Master</h1>
-            <p>Click on any chapter to practice MCQs with instant feedback. Track your progress and improve your score!</p>
-        </div>
+    <!-- Language Toggle Button -->
+    <div class="language-toggle">
+        <button id="langToggle" class="lang-btn">
+            <i class="fas fa-language"></i>
+            <span id="langText">اردو + انگریزی</span>
+        </button>
+    </div>
 
-        <!-- Chapters Grid -->
-        <div class="chapters-grid" id="chaptersGrid">
-            <!-- Chapters will be loaded by JavaScript -->
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title animate-title">کلاس دہم اردو MCQ ٹیسٹ</h1>
+            <p class="subtitle animate-subtitle">گرامر، مصنفین اور اسباق سے متعلق 40 سوالات</p>
+            
+            <div class="instructions">
+                <h2><i class="fas fa-info-circle"></i> ہدایات</h2>
+                <ul>
+                    <li>کل 40 سوالات ہیں</li>
+                    <li>ہر سوال کے 4 ممکنہ جوابات ہیں</li>
+                    <li>صرف ایک جواب درست ہے</li>
+                    <li>آپ اپنے جوابات دیکھ سکتے ہیں اور ان میں تبدیلی کر سکتے ہیں</li>
+                    <li>آخر میں سبمٹ بٹن دبائیں اور اپنا اسکور دیکھیں</li>
+                </ul>
+                
+                <div class="stats">
+                    <div class="stat-box">
+                        <i class="fas fa-question-circle"></i>
+                        <span>کل سوالات: <strong>40</strong></span>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-clock"></i>
+                        <span>تخمینہ وقت: <strong>25 منٹ</strong></span>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-book"></i>
+                        <span>اہمیت: <strong>فائنل امتحان</strong></span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <!-- MCQ Pages Container -->
-        <div id="mcqPagesContainer">
-            <!-- MCQ pages will be dynamically generated -->
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <p>Designed for Class 10 Science Half Yearly Examination.</p>
-            <p>Created And Designed by Sir Zeeshan Khan.</p>
+    <!-- Progress Tracker (Always visible) -->
+    <div class="progress-fixed">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-text">
+                <span id="progressText">سوال 1/40</span>
+                <span id="progressPercent">0%</span>
+            </div>
         </div>
     </div>
 
-    <!-- Include both JavaScript files -->
-    <script src="script.js"></script>
+    <!-- MCQ Container -->
+    <main class="container">
+        <div id="mcqContainer" class="mcq-container">
+            <!-- MCQs will be loaded dynamically from mcq.js -->
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button id="prevBtn" class="nav-btn">
+                <i class="fas fa-arrow-right"></i> پچھلا
+            </button>
+            <button id="nextBtn" class="nav-btn">
+                اگلا <i class="fas fa-arrow-left"></i>
+            </button>
+            <button id="submitBtn" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> سبمٹ کریں
+            </button>
+        </div>
+
+        <!-- Jump to Progress Button -->
+        <button id="jumpToProgress" class="jump-btn">
+            <i class="fas fa-chart-line"></i> ترقی دیکھیں
+        </button>
+    </main>
+
+    <!-- Progress Tracker (Bottom of page) -->
+    <section class="progress-section">
+        <div class="container">
+            <h2><i class="fas fa-tasks"></i> آپ کی ترقی</h2>
+            <div class="progress-tracker" id="progressTracker">
+                <!-- Progress circles will be generated by JavaScript -->
+            </div>
+            
+            <div class="progress-details">
+                <div class="detail-box answered">
+                    <span class="detail-label">جواب دیے گئے</span>
+                    <span id="answeredCount" class="detail-value">0</span>
+                </div>
+                <div class="detail-box remaining">
+                    <span class="detail-label">باقی</span>
+                    <span id="remainingCount" class="detail-value">40</span>
+                </div>
+                <div class="detail-box correct">
+                    <span class="detail-label">درست جوابات</span>
+                    <span id="correctCount" class="detail-value">0</span>
+                </div>
+                <div class="detail-box score">
+                    <span class="detail-label">اسکور</span>
+                    <span id="scoreValue" class="detail-value">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Modal -->
+    <div id="resultsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-trophy"></i> آپ کا نتیجہ</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="result-summary">
+                    <div class="result-circle">
+                        <svg width="120" height="120" viewBox="0 0 120 120">
+                            <circle class="result-circle-bg" cx="60" cy="60" r="54"></circle>
+                            <circle class="result-circle-progress" cx="60" cy="60" r="54"></circle>
+                        </svg>
+                        <div class="result-percent" id="finalScore">0%</div>
+                    </div>
+                    <div class="result-details">
+                        <h3 id="resultTitle">مبارک ہو!</h3>
+                        <p id="resultMessage">آپ نے ٹیسٹ مکمل کر لیا ہے</p>
+                        
+                        <div class="result-stats">
+                            <div class="result-stat">
+                                <span class="stat-label">کل سوالات</span>
+                                <span class="stat-value">40</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="stat-label">درست جوابات</span>
+                                <span id="finalCorrect" class="stat-value">0</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="stat-label">غلط جوابات</span>
+                                <span id="finalWrong" class="stat-value">0</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="stat-label">چھوڑے گئے</span>
+                                <span id="finalSkipped" class="stat-value">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="result-actions">
+                    <button id="reviewBtn" class="action-btn">
+                        <i class="fas fa-redo"></i> جائزہ لیں
+                    </button>
+                    <button id="restartBtn" class="action-btn restart">
+                        <i class="fas fa-sync-alt"></i> دوبارہ شروع کریں
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>کلاس دہم اردو MCQ ٹیسٹ &copy; 2023 - تمام حقوق محفوظ ہیں</p>
+            <p class="footer-note">یہ ٹیسٹ اردو گرامر، مصنفین اور درسی کتاب کے اسباق پر مبنی ہے</p>
+        </div>
+    </footer>
+
     <script src="mcq.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
