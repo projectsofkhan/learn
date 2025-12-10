@@ -1,1029 +1,943 @@
-// MCQ Data for all chapters
-const mcqData = {
-    "ch1": {
-        title: "Chapter 1: Chemical Reactions and Equations",
-        questions: [
-            {
-                question: "Which of the following is a combination reaction?",
-                options: [
-                    "2H₂O → 2H₂ + O₂",
-                    "CaO + H₂O → Ca(OH)₂",
-                    "2FeSO₄ → Fe₂O₃ + SO₂ + SO₃",
-                    "2Pb(NO₃)₂ → 2PbO + 4NO₂ + O₂"
-                ],
-                correctAnswer: 1
-            },
-            {
-                question: "The process of coating iron with zinc to prevent rusting is called:",
-                options: ["Galvanization", "Annealing", "Smelting", "Corrosion"],
-                correctAnswer: 0
-            },
-            {
-                question: "What type of reaction is represented by: 2Mg + O₂ → 2MgO?",
-                options: ["Decomposition", "Double Displacement", "Combination", "Displacement"],
-                correctAnswer: 2
-            },
-            {
-                question: "In the reaction Pb(s) + CuCl₂(aq) → PbCl₂(aq) + Cu(s):",
-                options: [
-                    "Copper is oxidised",
-                    "Lead is reduced",
-                    "Lead is oxidised",
-                    "No redox occurs"
-                ],
-                correctAnswer: 2
-            },
-            {
-                question: "A substance 'X' is used in whitewashing. It reacts with water to form 'Y'. 'X' and 'Y' are:",
-                options: [
-                    "X = CaO, Y = CaCO₃",
-                    "X = Ca(OH)₂, Y = CaO",
-                    "X = CaO, Y = Ca(OH)₂",
-                    "X = CaCO₃, Y = CaO"
-                ],
-                correctAnswer: 2
-            },
-            {
-                question: "Which gas is evolved when dilute hydrochloric acid reacts with sodium carbonate?",
-                options: ["Chlorine", "Hydrogen", "Carbon dioxide", "Oxygen"],
-                correctAnswer: 2
-            },
-            {
-                question: "Rancidity in food is prevented by adding:",
-                options: ["Oxidizing agents", "Reducing agents", "Antacids", "Catalysts"],
-                correctAnswer: 1
-            },
-            {
-                question: "The balanced equation for the reaction of barium chloride with sodium sulphate is:",
-                options: [
-                    "BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl",
-                    "BaCl + NaSO₄ → BaSO₄ + NaCl",
-                    "BaCl₂ + Na₂SO₄ → Ba₂SO₄ + NaCl",
-                    "2BaCl + Na₂SO₄ → Ba₂SO₄ + 2NaCl"
-                ],
-                correctAnswer: 0
-            },
-            {
-                question: "Which of the following is an endothermic reaction?",
-                options: [
-                    "Burning of natural gas",
-                    "Respiration",
-                    "Decomposition of vegetable matter",
-                    "Decomposition of calcium carbonate to quick lime"
-                ],
-                correctAnswer: 3
-            },
-            {
-                question: "In the electrolysis of water, the ratio of hydrogen to oxygen gas volume is:",
-                options: ["1:2", "2:1", "1:1", "8:1"],
-                correctAnswer: 1
-            }
-        ]
+// Class 10 Urdu MCQs - Based on Nawa-e-Urdu Part 2 Syllabus
+const urduMCQs = [
+    // حصّہ نثر (Prose Section) - Questions 1-6
+    {
+        id: 1,
+        category: "حصّہ نثر - نیا قانون",
+        question: "Naya Qanoon kis ne likha hai?",
+        options: [
+            "Saadat Hasan Manto",
+            "Patras Bukhari",
+            "Krishan Chander",
+            "Ismat Chughtai"
+        ],
+        correctAnswer: 0,
+        explanation: "Naya Qanoon Saadat Hasan Manto ne likha hai. Yeh Manto ka mashhoor afsana hai."
     },
-    "ch2": {
-        title: "Chapter 2: Acids, Bases and Salts",
-        questions: [
-            {
-                question: "A solution turns red litmus blue. Its pH is likely to be:",
-                options: ["1", "4", "5", "10"],
-                correctAnswer: 3
-            },
-            {
-                question: "Which one of the following is not a strong acid?",
-                options: [
-                    "Hydrochloric acid (HCl)",
-                    "Acetic acid (CH₃COOH)",
-                    "Sulphuric acid (H₂SO₄)",
-                    "Nitric acid (HNO₃)"
-                ],
-                correctAnswer: 1
-            },
-            {
-                question: "The chemical formula of Plaster of Paris is:",
-                options: ["CaSO₄·2H₂O", "CaSO₄·½H₂O", "CaCl₂·2H₂O", "CaCO₃"],
-                correctAnswer: 1
-            },
-            {
-                question: "Tooth enamel is made up of ______ which gets corroded by ______.",
-                options: [
-                    "Calcium phosphate, lactic acid",
-                    "Calcium carbonate, acetic acid",
-                    "Sodium chloride, citric acid",
-                    "Potassium nitrate, hydrochloric acid"
-                ],
-                correctAnswer: 0
-            },
-            {
-                question: "During the preparation of sodium hydroxide, the gas evolved at the anode is:",
-                options: ["Hydrogen", "Oxygen", "Chlorine", "Water vapour"],
-                correctAnswer: 2
-            },
-            {
-                question: "The pH of a sample of pure water is 7. A few drops of HCl are added to it. What will be its new pH?",
-                options: ["Equal to 7", "Greater than 7", "Less than 7", "Zero"],
-                correctAnswer: 2
-            },
-            {
-                question: "A salt formed by the reaction of a weak acid and strong base will give a solution that is:",
-                options: ["Acidic", "Basic", "Neutral", "Amphoteric"],
-                correctAnswer: 1
-            },
-            {
-                question: "Which of the following is used as an antacid?",
-                options: [
-                    "Sodium hydroxide",
-                    "Magnesium hydroxide",
-                    "Potassium hydroxide",
-                    "Acetic acid"
-                ],
-                correctAnswer: 1
-            },
-            {
-                question: "Washing soda is:",
-                options: ["NaHCO₃", "Na₂CO₃", "Na₂CO₃·10H₂O", "NaOH"],
-                correctAnswer: 2
-            },
-            {
-                question: "The process of dissolving an acid or base in water is:",
-                options: [
-                    "Always endothermic",
-                    "Always exothermic",
-                    "Can be exo or endothermic",
-                    "A physical change only"
-                ],
-                correctAnswer: 1
-            }
-        ]
+    {
+        id: 2,
+        category: "حصّہ نثر - نیا قانون",
+        question: "Naya Qanoon afsane mein kaun sa qanoon naya aaya tha?",
+        options: [
+            "Traffic Qanoon",
+            "Sharab bandi ka qanoon",
+            "Education Qanoon",
+            "Tax Qanoon"
+        ],
+        correctAnswer: 1,
+        explanation: "Naya Qanoon afsane mein sharab bandi ka qanoon naya aaya tha."
     },
-    "ch3": {
-        title: "Chapter 3: Metals and Non-metals",
-        questions: [
-            {
-                question: "Which of the following metals is stored in kerosene oil?",
-                options: ["Copper", "Sodium", "Iron", "Gold"],
-                correctAnswer: 1
-            },
-            {
-                question: "The property of metals by which they can be beaten into thin sheets is called:",
-                options: ["Malleability", "Ductility", "Conductivity", "Sonority"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which of the following is the most ductile metal?",
-                options: ["Silver", "Gold", "Copper", "Aluminium"],
-                correctAnswer: 1
-            },
-            {
-                question: "An alloy of mercury with other metals is called:",
-                options: ["Amalgam", "Solution", "Suspension", "Emulsion"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which of the following metals reacts vigorously with oxygen?",
-                options: ["Iron", "Copper", "Magnesium", "Silver"],
-                correctAnswer: 2
-            },
-            {
-                question: "The process of coating iron with zinc to prevent rusting is called:",
-                options: ["Galvanization", "Alloying", "Annealing", "Smelting"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which non-metal is a good conductor of electricity?",
-                options: ["Graphite", "Sulphur", "Phosphorus", "Nitrogen"],
-                correctAnswer: 0
-            },
-            {
-                question: "The metal which is liquid at room temperature is:",
-                options: ["Sodium", "Mercury", "Bromine", "Gallium"],
-                correctAnswer: 1
-            },
-            {
-                question: "Which of the following is not a property of non-metals?",
-                options: [
-                    "Poor conductors of heat",
-                    "Form acidic oxides",
-                    "Have high melting points",
-                    "Are brittle"
-                ],
-                correctAnswer: 2
-            },
-            {
-                question: "Which gas is produced when metals react with acids?",
-                options: ["Oxygen", "Nitrogen", "Hydrogen", "Carbon dioxide"],
-                correctAnswer: 2
-            }
-        ]
+    {
+        id: 3,
+        category: "حصّہ نثر - سر سید کا بچپن",
+        question: "Sir Syed ka Bachpan kis ne likha hai?",
+        options: [
+            "Altaf Hussain Hali",
+            "Mohammad Husain Azad",
+            "Sir Syed Ahmed Khan",
+            "Deputy Nazir Ahmed"
+        ],
+        correctAnswer: 0,
+        explanation: "Sir Syed ka Bachpan Altaf Hussain Hali ne likha hai."
     },
-    "ch4": {
-        title: "Chapter 4: Carbon and its Compounds",
-        questions: [
-            {
-                question: "Which of the following is the molecular formula of butane?",
-                options: ["C₃H₈", "C₄H₁₀", "C₅H₁₂", "C₂H₆"],
-                correctAnswer: 1
-            },
-            {
-                question: "Soap molecules form structures called ______ in water.",
-                options: ["Micelles", "Ions", "Crystals", "Polymers"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which functional group is present in alcohols?",
-                options: ["-COOH", "-CHO", "-OH", "-CO"],
-                correctAnswer: 2
-            },
-            {
-                question: "Vinegar contains which acid?",
-                options: ["Citric acid", "Acetic acid", "Lactic acid", "Formic acid"],
-                correctAnswer: 1
-            },
-            {
-                question: "Which of the following is a saturated hydrocarbon?",
-                options: ["C₂H₄", "C₃H₆", "C₄H₁₀", "C₂H₂"],
-                correctAnswer: 2
-            },
-            {
-                question: "The process of converting vegetable oil to vegetable ghee is called:",
-                options: ["Hydrogenation", "Oxidation", "Saponification", "Esterification"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which compound gives vinegar its sour taste?",
-                options: ["Ethanol", "Methanol", "Acetic acid", "Formic acid"],
-                correctAnswer: 2
-            },
-            {
-                question: "Denatured alcohol is ethanol mixed with:",
-                options: ["Methanol", "Water", "Kerosene", "Petrol"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which of the following is used as an antifreeze in automobiles?",
-                options: ["Ethanol", "Methanol", "Ethylene glycol", "Glycerol"],
-                correctAnswer: 2
-            },
-            {
-                question: "The IUPAC name of CH₃COOH is:",
-                options: ["Methanoic acid", "Ethanoic acid", "Propanoic acid", "Butanoic acid"],
-                correctAnswer: 1
-            }
-        ]
+    {
+        id: 4,
+        category: "حصّہ نثر - سر سید کا بچپن",
+        question: "Sir Syed ki pehli ustani ka naam kya tha?",
+        options: [
+            "Maulvi Hamiduddin",
+            "Maulvi Ghulam Hussain",
+            "Maulvi Muhammad Ibrahim",
+            "Maulvi Mubarak Ali"
+        ],
+        correctAnswer: 1,
+        explanation: "Sir Syed ki pehli ustani Maulvi Ghulam Hussain thi."
     },
-    "ch5": {
-        title: "Chapter 5: Life Processes",
-        questions: [
-            {
-                question: "The autotrophic mode of nutrition requires:",
-                options: [
-                    "Carbon dioxide and water",
-                    "Chlorophyll",
-                    "Sunlight",
-                    "All of the above"
-                ],
-                correctAnswer: 3
-            },
-            {
-                question: "The opening and closing of stomatal pores is controlled by:",
-                options: ["Xylem", "Phloem", "Guard cells", "Root pressure"],
-                correctAnswer: 2
-            },
-            {
-                question: "In human digestive system, bile is secreted by:",
-                options: ["Pancreas", "Liver", "Kidney", "Stomach"],
-                correctAnswer: 1
-            },
-            {
-                question: "During respiration, the exchange of gases in the alveoli occurs by:",
-                options: ["Osmosis", "Diffusion", "Active transport", "Phagocytosis"],
-                correctAnswer: 1
-            },
-            {
-                question: "Which chamber of the human heart has the thickest muscular wall?",
-                options: ["Right atrium", "Left atrium", "Right ventricle", "Left ventricle"],
-                correctAnswer: 3
-            },
-            {
-                question: "The filtration units in kidneys are called:",
-                options: ["Ureter", "Urethra", "Neurons", "Nephrons"],
-                correctAnswer: 3
-            },
-            {
-                question: "Xylem in plants is responsible for the transport of:",
-                options: ["Water and minerals", "Food", "Amino acids", "Oxygen"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which enzyme is present in saliva that breaks down starch?",
-                options: ["Trypsin", "Pepsin", "Amylase", "Lipase"],
-                correctAnswer: 2
-            },
-            {
-                question: "The process of breaking down glucose with the release of energy in the absence of oxygen is called:",
-                options: ["Aerobic respiration", "Anaerobic respiration", "Photosynthesis", "Transpiration"],
-                correctAnswer: 1
-            },
-            {
-                question: "In the process of excretion, the term 'urine' refers to:",
-                options: [
-                    "Blood without cells",
-                    "Water with dissolved salts",
-                    "The filtrate containing urea, salts, and excess water",
-                    "Undigested food"
-                ],
-                correctAnswer: 2
-            }
-        ]
+    {
+        id: 5,
+        category: "حصّہ نثر - آزمایش",
+        question: "Aazmaish kis ne likhi hai?",
+        options: [
+            "Mohammad Mujeeb",
+            "Quratulain Hyder",
+            "Abdullah Hussain",
+            "Shaukat Siddiqui"
+        ],
+        correctAnswer: 0,
+        explanation: "Aazmaish Mohammad Mujeeb ne likhi hai."
     },
-    "ch6": {
-        title: "Chapter 6: Control and Coordination",
-        questions: [
-            {
-                question: "Which plant hormone promotes cell division?",
-                options: ["Auxin", "Gibberellin", "Cytokinin", "Abscisic acid"],
-                correctAnswer: 2
-            },
-            {
-                question: "The junction between two neurons is called:",
-                options: ["Synapse", "Dendrite", "Axon", "Impulse"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which part of the brain controls balance and posture?",
-                options: ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
-                correctAnswer: 1
-            },
-            {
-                question: "Iodine is necessary for the synthesis of which hormone?",
-                options: ["Adrenaline", "Thyroxine", "Insulin", "Estrogen"],
-                correctAnswer: 1
-            },
-            {
-                question: "Which of the following is not a reflex action?",
-                options: ["Salivation", "Blinking", "Reading", "Knee jerk"],
-                correctAnswer: 2
-            },
-            {
-                question: "The growth of pollen tubes towards ovules is due to:",
-                options: ["Geotropism", "Phototropism", "Chemotropism", "Hydrotropism"],
-                correctAnswer: 2
-            },
-            {
-                question: "Which gland is known as the master gland?",
-                options: ["Thyroid", "Pituitary", "Adrenal", "Pancreas"],
-                correctAnswer: 1
-            },
-            {
-                question: "Disease caused by deficiency of iodine is:",
-                options: ["Diabetes", "Goitre", "Anaemia", "Rickets"],
-                correctAnswer: 1
-            },
-            {
-                question: "The hormone that increases blood sugar level is:",
-                options: ["Insulin", "Glucagon", "Adrenaline", "Thyroxine"],
-                correctAnswer: 1
-            },
-            {
-                question: "Which part of neuron receives information?",
-                options: ["Axon", "Dendrite", "Cell body", "Nucleus"],
-                correctAnswer: 1
-            }
-        ]
+    {
+        id: 6,
+        category: "حصّہ نثر - آزمایش",
+        question: "Aazmaish sabaq ka markazi khayal kya hai?",
+        options: [
+            "Taleem ki ahmiyat",
+            "Zindagi ki aazmaishein",
+            "Science ki taraqqi",
+            "Watan se mohabbat"
+        ],
+        correctAnswer: 1,
+        explanation: "Aazmaish sabaq ka markazi khayal zindagi ki aazmaishein aur insan ka imtehan hai."
     },
-    "ch7": {
-        title: "Chapter 7: How do Organisms Reproduce",
-        questions: [
-            {
-                question: "Binary fission is observed in:",
-                options: ["Hydra", "Yeast", "Amoeba", "Spirogyra"],
-                correctAnswer: 2
-            },
-            {
-                question: "Which is not a method of vegetative propagation?",
-                options: ["Cutting", "Grafting", "Layering", "Pollination"],
-                correctAnswer: 3
-            },
-            {
-                question: "The male reproductive part of a flower is:",
-                options: ["Stamen", "Pistil", "Ovary", "Sepal"],
-                correctAnswer: 0
-            },
-            {
-                question: "In human females, fertilization occurs in:",
-                options: ["Ovary", "Uterus", "Vagina", "Fallopian tube"],
-                correctAnswer: 3
-            },
-            {
-                question: "Which contraceptive method prevents implantation?",
-                options: ["Condom", "Copper-T", "Oral pills", "Diaphragm"],
-                correctAnswer: 1
-            },
-            {
-                question: "The process of release of ovum from ovary is called:",
-                options: ["Menstruation", "Ovulation", "Fertilization", "Implantation"],
-                correctAnswer: 1
-            },
-            {
-                question: "Which of the following reproduces by fragmentation?",
-                options: ["Planaria", "Spirogyra", "Hydra", "All of these"],
-                correctAnswer: 3
-            },
-            {
-                question: "The period during adolescence when reproductive organs mature is called:",
-                options: ["Menopause", "Puberty", "Gestation", "Menstruation"],
-                correctAnswer: 1
-            },
-            {
-                question: "The developing zygote is called:",
-                options: ["Embryo", "Foetus", "Blastocyst", "Morula"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which STD is caused by bacteria?",
-                options: ["AIDS", "Syphilis", "Hepatitis", "Herpes"],
-                correctAnswer: 1
-            }
-        ]
+    {
+        id: 7,
+        category: "حصّہ نثر - عورتوں کے حقوق",
+        question: "Aurton ke Haqooq kis ne likhe hain?",
+        options: [
+            "Sir Syed Ahmed Khan",
+            "Allama Iqbal",
+            "Maulana Azad",
+            "Josh Malihabadi"
+        ],
+        correctAnswer: 0,
+        explanation: "Aurton ke Haqooq Sir Syed Ahmed Khan ne likhe hain."
     },
-    "ch8": {
-        title: "Chapter 8: Light - Reflection and Refraction",
-        
-               questions: [
-            {
-                question: "A ray of light strikes a plane mirror at an angle of incidence of 40°. The angle of reflection is:",
-                options: ["30°", "40°", "50°", "90°"],
-                correctAnswer: 1
-            },
-            {
-                question: "The image formed by a concave mirror is virtual, erect, and magnified when the object is placed:",
-                options: [
-                    "At the focus",
-                    "Between the pole and focus",
-                    "At the centre of curvature",
-                    "Beyond the centre of curvature"
-                ],
-                correctAnswer: 1
-            },
-            {
-                question: "The refractive index of diamond is 2.42. This means:",
-                options: [
-                    "Speed of light in diamond is 2.42 times that in vacuum.",
-                    "Speed of light in vacuum is 2.42 times that in diamond.",
-                    "Diamond is 2.42 times denser than water.",
-                    "Angle of incidence in diamond is 2.42 times the angle of refraction."
-                ],
-                correctAnswer: 1
-            },
-            {
-                question: "A student obtains a blurred image of an object on a screen. To get a sharp image, he must move the lens:",
-                options: [
-                    "Towards the screen",
-                    "Away from the screen",
-                    "Either towards or away from the screen depending on the position",
-                    "Nothing can be done"
-                ],
-                correctAnswer: 2
-            },
-            {
-                question: "The power of a lens is -2.0 D. Its focal length is:",
-                options: ["+50 cm", "-50 cm", "+2 m", "-0.5 m"],
-                correctAnswer: 1
-            },
-            {
-                question: "In which of the following, the final image is always erect and diminished?",
-                options: [
-                    "Simple microscope",
-                    "Compound microscope",
-                    "Astronomical telescope",
-                    "Terrestrial telescope"
-                ],
-                correctAnswer: 3
-            },
-            {
-                question: "The phenomenon of splitting of white light into its constituent colours is called:",
-                options: ["Reflection", "Refraction", "Dispersion", "Scattering"],
-                correctAnswer: 2
-            },
-            {
-                question: "The SI unit of power of a lens is:",
-                options: ["Metre", "Dioptre", "Candela", "Joule"],
-                correctAnswer: 1
-            },
-            {
-                question: "A convex lens forms a real and inverted image of an object. The object is placed:",
-                options: [
-                    "Between F and 2F",
-                    "At F",
-                    "Between F and optical centre",
-                    "Beyond 2F"
-                ],
-                correctAnswer: 0
-            },
-            {
-                question: "The rearview mirror in a car is usually a:",
-                options: ["Concave mirror", "Convex mirror", "Plane mirror", "Cylindrical mirror"],
-                correctAnswer: 1
-            }
-        ]
+    {
+        id: 8,
+        category: "حصّہ نثر - عورتوں کے حقوق",
+        question: "Sir Syed ne aurton ke liye konsi cheez zaroori batayi?",
+        options: [
+            "Parda",
+            "Taleem",
+            "Shadi",
+            "Kaam"
+        ],
+        correctAnswer: 1,
+        explanation: "Sir Syed ne aurton ke liye taleem ko sab se zyada zaroori bataya."
     },
-    "ch9": {
-        title: "Chapter 9: Human Eye and Colourful World",
-        questions: [
-            {
-                question: "The defect of vision in which a person cannot see distant objects clearly is called:",
-                options: ["Myopia", "Hypermetropia", "Presbyopia", "Astigmatism"],
-                correctAnswer: 0
-            },
-            {
-                question: "Which part of the eye controls the amount of light entering?",
-                options: ["Cornea", "Iris", "Pupil", "Retina"],
-                correctAnswer: 1
-            },
-            {
-                question: "The phenomenon of scattering of light by colloidal particles is called:",
-                options: ["Tyndall effect", "Dispersion", "Refraction", "Reflection"],
-                correctAnswer: 0
-            },
-            {
-                question: "The colour of sky appears blue due to:",
-                options: [
-                    "Reflection of light",
-                    "Refraction of light",
-                    "Scattering of light",
-                    "Dispersion of light"
-                ],
-                correctAnswer: 2
-            },
-            {
-                question: "The splitting of white light into seven colours is due to:",
-                options: ["Reflection", "Refraction", "Dispersion", "Scattering"],
-                correctAnswer: 2
-            },
-            {
-                question: "Which lens is used to correct hypermetropia?",
-                options: ["Concave lens", "Convex lens", "Cylindrical lens", "Bifocal lens"],
-                correctAnswer: 1
-            },
-            {
-                question: "The ability of eye to focus on both near and distant objects is called:",
-                options: ["Accommodation", "Adaptation", "Refraction", "Convergence"],
-                correctAnswer: 0
-            },
-            {
-                question: "At sunrise and sunset, the sun appears red because:",
-                options: [
-                    "Red light is scattered the most",
-                    "Red light is scattered the least",
-                    "Blue light is absorbed",
-                    "All colours are scattered equally"
-                ],
-                correctAnswer: 1
-            },
-            {
-                question: "The defect of vision due to gradual weakening of ciliary muscles is:",
-                options: ["Myopia", "Hypermetropia", "Presbyopia", "Astigmatism"],
-                correctAnswer: 2
-            },
-            {
-                question: "Which cells in retina are sensitive to bright light?",
-                options: ["Rods", "Cones", "Both rods and cones", "Optic nerve cells"],
-                correctAnswer: 1
-            }
-        ]
+    {
+        id: 9,
+        category: "حصّہ نثر - مخلوط زبان",
+        question: "Makhloot Zaban kis ne likhi hai?",
+        options: [
+            "Maulvi Abdul Haq",
+            "Moulana Shibli Nomani",
+            "Doctor Waheed Qureshi",
+            "Farman Fatehpuri"
+        ],
+        correctAnswer: 0,
+        explanation: "Makhloot Zaban Maulvi Abdul Haq ne likhi hai."
     },
-    "ch10": {
-        title: "Chapter 10: Electricity",
-        questions: [
-            {
-                question: "The SI unit of electric current is:",
-                options: ["Volt", "Ohm", "Ampere", "Coulomb"],
-                correctAnswer: 2
-            },
-            {
-                question: "Two resistors, R1 and R2, are connected in series. Their equivalent resistance is:",
-                options: ["R1 + R2", "1/R1 + 1/R2", "R1R2/(R1+R2)", "(R1+R2)/R1R2"],
-                correctAnswer: 0
-            },
-            {
-                question: "The heating element of an electric heater is made of:",
-                options: ["Copper", "Tungsten", "Nichrome", "Aluminum"],
-                correctAnswer: 2
-            },
-            {
-                question: "According to Ohm's law:",
-                options: ["V ∝ I", "V ∝ 1/I", "I ∝ R", "R ∝ 1/V"],
-                correctAnswer: 0
-            },
-            {
-                question: "The commercial unit of electrical energy is:",
-                options: ["Watt", "Kilowatt-hour (kWh)", "Joule", "Kilowatt"],
-                correctAnswer: 1
-            },
-            {
-                question: "The rate at which electric energy is consumed is called:",
-                options: ["Electric power", "Electric current", "Electric potential", "Electrical resistance"],
-                correctAnswer: 0
-            },
-            {
-                question: "A wire of resistance R is cut into three equal parts. These parts are then connected in parallel. The equivalent resistance is:",
-                options: ["R/9", "R/3", "R", "3R"],
-                correctAnswer: 0
-            },
-            {
-                question: "The filament of an electric bulb is made of tungsten because it has:",
-                options: [
-                    "Low melting point",
-                    "High resistivity and high melting point",
-                    "Low resistivity",
-                    "High malleability"
-                ],
-                correctAnswer: 1
-            },
-            {
-                question: "In a household electric circuit, appliances are connected in:",
-                options: [
-                    "Series to have the same current",
-                    "Parallel to have the same potential difference",
-                    "Series to save wire",
-                    "Parallel to reduce resistance"
-                ],
-                correctAnswer: 1
-            },
-            {
-                question: "The purpose of a fuse in an electrical circuit is to:",
-                options: ["Increase current", "Prevent overheating and fires", "Reduce power consumption", "Increase voltage"],
-                correctAnswer: 1
-            }
-        ]
+    {
+        id: 10,
+        category: "حصّہ نثر - مخلوط زبان",
+        question: "Makhloot Zaban sabaq mein kis cheez par zor diya gaya hai?",
+        options: [
+            "Angrezi zaban ki ahmiyat",
+            "Urdu zaban ki taraqqi",
+            "Hindi zaban ki khubsoorti",
+            "Zabanon ki milawat"
+        ],
+        correctAnswer: 3,
+        explanation: "Makhloot Zaban sabaq mein zabanon ki milawat aur Urdu ki taraqqi par zor diya gaya hai."
+    },
+    {
+        id: 11,
+        category: "حصّہ نثر - ماحول بچائیے",
+        question: "Mahool Bachaiye kis mazmoon ka hissa hai?",
+        options: [
+            "Science ke mazmoon",
+            "Social issues ke mazmoon",
+            "Adab ke mazmoon",
+            "Tareekh ke mazmoon"
+        ],
+        correctAnswer: 1,
+        explanation: "Mahool Bachaiye social issues ke mazmoon mein aata hai."
+    },
+    {
+        id: 12,
+        category: "حصّہ نثر - ماحول بچائیے",
+        question: "Mahool ko bachane ke liye sab se aham kaam kya hai?",
+        options: [
+            "Factories band karna",
+            "Cars band karna",
+            "Shajar kaari",
+            "Safai"
+        ],
+        correctAnswer: 2,
+        explanation: "Mahool ko bachane ke liye shajar kaari sab se aham kaam hai."
+
+    // حصّہ نظم (غزل) - Ghazal Section - Questions 13-16
+    },
+    {
+        id: 13,
+        category: "نظم (غزل) - لائی حیات آئے",
+        question: "Laai Hayat Aaye kis shayar ki ghazal hai?",
+        options: [
+            "Sheikh Muhammad Ibrahim Zauq",
+            "Mirza Ghalib",
+            "Mir Taqi Mir",
+            "Bahadur Shah Zafar"
+        ],
+        correctAnswer: 0,
+        explanation: "Laai Hayat Aaye Sheikh Muhammad Ibrahim Zauq ki ghazal hai."
+    },
+    {
+        id: 14,
+        category: "نظم (غزل) - لائی حیات آئے",
+        question: "Zauq kis badshah ke ustadi shayar the?",
+        options: [
+            "Shah Alam",
+            "Akbar Shah II",
+            "Bahadur Shah Zafar",
+            "Alamgir II"
+        ],
+        correctAnswer: 2,
+        explanation: "Zauq Bahadur Shah Zafar ke ustadi shayar the."
+    },
+    {
+        id: 15,
+        category: "نظم (غزل) - ڈھونڈو گے اگر ملکوں ملکوں",
+        question: "Dhoondo Ge Agar Mulkon Mulkon kis shayar ki ghazal hai?",
+        options: [
+            "Shad Azeemabadi",
+            "Firaq Gorakhpuri",
+            "Jigar Moradabadi",
+            "Hasrat Mohani"
+        ],
+        correctAnswer: 0,
+        explanation: "Dhoondo Ge Agar Mulkon Mulkon Shad Azeemabadi ki ghazal hai."
+    },
+    {
+        id: 16,
+        category: "نظم (غزل) - ڈھونڈو گے اگر ملکوں ملکوں",
+        question: "Is ghazal ka markazi khayal kya hai?",
+        options: [
+            "Watan ki talash",
+            "Mohabbat ki talash",
+            "Khuda ki talash",
+            "Haqeeqat ki talash"
+        ],
+        correctAnswer: 3,
+        explanation: "Is ghazal ka markazi khayal haqeeqat aur insaniyat ki talash hai."
+    },
+    {
+        id: 17,
+        category: "نظم (غزل) - دُنیا میری بلا جانے",
+        question: "Duniya Meri Bala Jaane kis shayar ki ghazal hai?",
+        options: [
+            "Fani Badayuni",
+            "Josh Malihabadi",
+            "Nazeer Akbarabadi",
+            "Daagh Dehlvi"
+        ],
+        correctAnswer: 0,
+        explanation: "Duniya Meri Bala Jaane Fani Badayuni ki ghazal hai."
+    },
+    {
+        id: 18,
+        category: "نظم (غزل) - دُنیا میری بلا جانے",
+        question: "Fani Badayuni ki shayari ka khas rang kya hai?",
+        options: [
+            "Mohabbat",
+            "Rindana",
+            "Deeni",
+            "Watanparasti"
+        ],
+        correctAnswer: 1,
+        explanation: "Fani Badayuni ki shayari ka khas rang rindana aur zindagi se bezaari ka hai."
+    },
+    {
+        id: 19,
+        category: "نظم (غزل) - ادب نے دل کے تقاضے",
+        question: "Adab ne Dil ke Taqaze kis shayar ki ghazal hai?",
+        options: [
+            "Yas Yagana Changezi",
+            "Majaz Lucknowi",
+            "Sahir Ludhianvi",
+            "Faiz Ahmed Faiz"
+        ],
+        correctAnswer: 0,
+        explanation: "Adab ne Dil ke Taqaze Yas Yagana Changezi ki ghazal hai."
+    },
+    {
+        id: 20,
+        category: "نظم (غزل) - ادب نے دل کے تقاضے",
+        question: "Yas Yagana Changezi ka asal naam kya tha?",
+        options: [
+            "Mirza Yaas",
+            "Ahmad Hussain",
+            "Asghar Hussain",
+            "Javed Hussain"
+        ],
+        correctAnswer: 2,
+        explanation: "Yas Yagana Changezi ka asal naam Asghar Hussain tha."
+
+    // حصّہ نظم (نظم) - Nazm Section - Questions 21-25
+    },
+    {
+        id: 21,
+        category: "نظم (نظم) - جلوہء دربارِ دہلی",
+        question: "Jalwa-e-Darbar-e-Dehli kis shayar ki nazm hai?",
+        options: [
+            "Akbar Allahabadi",
+            "Hafeez Jalandhari",
+            "Altaf Hussain Hali",
+            "Mohammad Iqbal"
+        ],
+        correctAnswer: 0,
+        explanation: "Jalwa-e-Darbar-e-Dehli Akbar Allahabadi ki nazm hai."
+    },
+    {
+        id: 22,
+        category: "نظم (نظم) - جلوہء دربارِ دہلی",
+        question: "Akbar Allahabadi kis andaaz ke shayar the?",
+        options: [
+            "Romantic",
+            "Satirical",
+            "Religious",
+            "Patriotic"
+        ],
+        correctAnswer: 1,
+        explanation: "Akbar Allahabadi satirical (tanz-o-mizah) andaaz ke shayar the."
+    },
+    {
+        id: 23,
+        category: "نظم (نظم) - حقیقت حسن",
+        question: "Haqeeqat-e-Husn kis shayar ki nazm hai?",
+        options: [
+            "Doctor Allama Iqbal",
+            "Mirza Ghalib",
+            "Faiz Ahmed Faiz",
+            "Ahmed Nadeem Qasmi"
+        ],
+        correctAnswer: 0,
+        explanation: "Haqeeqat-e-Husn Doctor Allama Iqbal ki nazm hai."
+    },
+    {
+        id: 24,
+        category: "نظم (نظم) - حقیقت حسن",
+        question: "Iqbal ne asal husn kya bataya hai?",
+        options: [
+            "Chehra",
+            "Aankhein",
+            "Ikhlaq",
+            "Taleem"
+        ],
+        correctAnswer: 2,
+        explanation: "Iqbal ne asal husn ikhlaq aur bataniat ko bataya hai."
+    },
+    {
+        id: 25,
+        category: "نظم (نظم) - او دیس سے آنے والے",
+        question: "O Des Se Aane Wale kis shayar ki nazm hai?",
+        options: [
+            "Akhtar Sheerani",
+            "Sahir Ludhianvi",
+            "Majrooh Sultanpuri",
+            "Kaifi Azmi"
+        ],
+        correctAnswer: 0,
+        explanation: "O Des Se Aane Wale Akhtar Sheerani ki nazm hai."
+    },
+    {
+        id: 26,
+        category: "نظم (نظم) - او دیس سے آنے والے",
+        question: "Akhtar Sheerani kis jamat ke shayar the?",
+        options: [
+            "Halqa-e-Arbab-e-Zauq",
+            "Bazm-e-Iqbal",
+            "Anjuman-e-Taraqqi Pasand",
+            "Halqa-e-Arbab-e-Sukhan"
+        ],
+        correctAnswer: 3,
+        explanation: "Akhtar Sheerani Halqa-e-Arbab-e-Sukhan ke shayar the."
+
+    // رباعی - Rubai Section - Questions 27-28
+    },
+    {
+        id: 27,
+        category: "رباعی - میر ببر علی انیس",
+        question: "Mir Babar Ali Anis kis fun se taluq rakhte the?",
+        options: [
+            "Ghazal",
+            "Marsiya",
+            "Qasida",
+            "Masnavi"
+        ],
+        correctAnswer: 1,
+        explanation: "Mir Babar Ali Anis marsiya nigari ke fun se taluq rakhte the."
+    },
+    {
+        id: 28,
+        category: "رباعی - میر ببر علی انیس",
+        question: "Anis kis shehar se taluq rakhte the?",
+        options: [
+            "Lucknow",
+            "Delhi",
+            "Faizabad",
+            "Hyderabad"
+        ],
+        correctAnswer: 0,
+        explanation: "Anis Lucknow se taluq rakhte the."
+    },
+    {
+        id: 29,
+        category: "رباعی - تیلوک چند محروم",
+        question: "Tilok Chand Mahroom kis zaban ke shayar the?",
+        options: [
+            "Urdu",
+            "Persian",
+            "Hindi",
+            "Punjabi"
+        ],
+        correctAnswer: 0,
+        explanation: "Tilok Chand Mahroom Urdu zaban ke shayar the."
+    },
+    {
+        id: 30,
+        category: "رباعی - تیلوک چند محروم",
+        question: "Mahroom ka khas mazmoon kya tha?",
+        options: [
+            "Mohabbat",
+            "Watanparasti",
+            "Insaniyat",
+            "Mazhabi"
+        ],
+        correctAnswer: 3,
+        explanation: "Mahroom ka khas mazmoon mazhabi aur rohaniyat tha."
+
+    // قواعد - Grammar Section - Questions 31-36
+    },
+    {
+        id: 31,
+        category: "قواعد - اسم",
+        question: "'Kitab' kya hai?",
+        options: [
+            "Ism",
+            "Sift",
+            "Fail",
+            "Zameer"
+        ],
+        correctAnswer: 0,
+        explanation: "'Kitab' ism hai."
+    },
+    {
+        id: 32,
+        category: "قواعد - اسم",
+        question: "Ism ki kitni aqsaam hain?",
+        options: [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        correctAnswer: 0,
+        explanation: "Ism ki do aqsaam hain: Ism-e-Zaat aur Ism-e-Sift."
+    },
+    {
+        id: 33,
+        category: "قواعد - فعل",
+        question: "'Woh parhta hai' mein 'parhta' kya hai?",
+        options: [
+            "Ism",
+            "Fail-e-Haal",
+            "Fail-e-Mazi",
+            "Fail-e-Mustaqbil"
+        ],
+        correctAnswer: 1,
+        explanation: "'Parhta' fail-e-haal hai."
+    },
+    {
+        id: 34,
+        category: "قواعد - فعل",
+        question: "Fail ki teenon asool kya hain?",
+        options: [
+            "Mazi, Haal, Mustaqbil",
+            "Zaat, Sift, Zameer",
+            "Mufrad, Tazkir, Tanees",
+            "Marfa, Nakra, Musharrah"
+        ],
+        correctAnswer: 0,
+        explanation: "Fail ki teen asool hain: Mazi, Haal, Mustaqbil."
+    },
+    {
+        id: 35,
+        category: "قواعد - حرف",
+        question: "'Aur' kya hai?",
+        options: [
+            "Harf-e-Atf",
+            "Harf-e-Jar",
+            "Harf-e-Shart",
+            "Harf-e-Nida"
+        ],
+        correctAnswer: 0,
+        explanation: "'Aur' harf-e-atf hai."
+    },
+    {
+        id: 36,
+        category: "قواعد - حرف",
+        question: "Harf ki taqseem kis bunyad par hoti hai?",
+        options: [
+            "Maani ke aitbaar se",
+            "Lafz ke aitbaar se",
+            "Harakat ke aitbaar se",
+            "Jumle mein jagah ke aitbaar se"
+        ],
+        correctAnswer: 0,
+        explanation: "Harf ki taqseem maani ke aitbaar se hoti hai."
+
+    // تحریری کام - Writing Section - Questions 37-40
+    },
+    {
+        id: 37,
+        category: "تحریری کام - درخواست",
+        question: "Darkhwast kis cheez ke liye likhi jati hai?",
+        options: [
+            "Information ke liye",
+            "Permission ke liye",
+            "Complaint ke liye",
+            "All of these"
+        ],
+        correctAnswer: 3,
+        explanation: "Darkhwast information, permission, complaint waghera ke liye likhi jati hai."
+    },
+    {
+        id: 38,
+        category: "تحریری کام - خط",
+        question: "Khat ki aam taqseem kya hai?",
+        options: [
+            "Dosti aur Rishtedari",
+            "Shikayat aur Darkhwast",
+            "Rasmi aur Ghair Rasmi",
+            "Tijarti aur Shakhsi"
+        ],
+        correctAnswer: 2,
+        explanation: "Khat ki aam taqseem Rasmi aur Ghair Rasmi hai."
+    },
+    {
+        id: 39,
+        category: "تحریری کام - مضمون",
+        question: "Mazmoon likhne ka aam tareeqa kya hai?",
+        options: [
+            "Pehla muqaddama, phir asal mazmoon, phir khatma",
+            "Seedha asal mazmoon likhna",
+            "Sirf sawal jawab",
+            "Khawateen ke liye alag tareeqa"
+        ],
+        correctAnswer: 0,
+        explanation: "Mazmoon likhne ka aam tareeqa hai: Pehla muqaddama, phir asal mazmoon, phir khatma."
+    },
+    {
+        id: 40,
+        category: "تحریری کام - غیر درسی اقتباس",
+        question: "Ghair Darsi Iqtibas se kya murad hai?",
+        options: [
+            "Jo kitaab mein nahi hai",
+            "Jo course se bahar hai",
+            "Jo khud se likha gaya hai",
+            "Jo dusri zaban se tarjuma hai"
+        ],
+        correctAnswer: 1,
+        explanation: "Ghair Darsi Iqtibas se murad hai course se bahar ka koi hissa jo parhaya ja raha ho."
+    }
+];
+
+// Urdu translations for bilingual mode
+const urduTranslations = {
+    1: {
+        question: "نیا قانون کس نے لکھا ہے؟",
+        options: [
+            "سعادت حسن منٹو",
+            "پطرس بخاری",
+            "کرشن چندر",
+            "عصمت چغتائی"
+        ],
+        explanation: "نیا قانون سعادت حسن منٹو نے لکھا ہے۔ یہ منٹو کا مشہور افسانہ ہے۔"
+    },
+    2: {
+        question: "نیا قانون افسانے میں کون سا قانون نیا آیا تھا؟",
+        options: [
+            "ٹریفک قانون",
+            "شراب بندی کا قانون",
+            "تعلیم کا قانون",
+            "ٹیکس کا قانون"
+        ],
+        explanation: "نیا قانون افسانے میں شراب بندی کا قانون نیا آیا تھا۔"
+    },
+    3: {
+        question: "سر سید کا بچپن کس نے لکھا ہے؟",
+        options: [
+            "الطاف حسین حالی",
+            "محمد حسین آزاد",
+            "سر سید احمد خاں",
+            "نذیر احمد"
+        ],
+        explanation: "سر سید کا بچپن الطاف حسین حالی نے لکھا ہے۔"
+    },
+    4: {
+        question: "سر سید کی پہلی استانی کا نام کیا تھا؟",
+        options: [
+            "مولوی حمید الدین",
+            "مولوی غلام حسین",
+            "مولوی محمد ابراہیم",
+            "مولوی مبارک علی"
+        ],
+        explanation: "سر سید کی پہلی استانی مولوی غلام حسین تھیں۔"
+    },
+    5: {
+        question: "آزمایش کس نے لکھی ہے؟",
+        options: [
+            "محمد مجیب",
+            "قرۃ العین حیدر",
+            "عبداللہ حسین",
+            "شوکت صدیقی"
+        ],
+        explanation: "آزمایش محمد مجیب نے لکھی ہے۔"
+    },
+    6: {
+        question: "آزمایش سبق کا مرکزی خیال کیا ہے؟",
+        options: [
+            "تعلیم کی اہمیت",
+            "زندگی کی آزمائشیں",
+            "سائنس کی ترقی",
+            "وطن سے محبت"
+        ],
+        explanation: "آزمایش سبق کا مرکزی خیال زندگی کی آزمائشیں اور انسان کا امتحان ہے۔"
+    },
+    7: {
+        question: "عورتوں کے حقوق کس نے لکھے ہیں؟",
+        options: [
+            "سر سید احمد خاں",
+            "علامہ اقبال",
+            "مولانا آزاد",
+            "جوش ملیح آبادی"
+        ],
+        explanation: "عورتوں کے حقوق سر سید احمد خاں نے لکھے ہیں۔"
+    },
+    8: {
+        question: "سر سید نے عورتوں کے لیے کون سی چیز ضروری بتائی؟",
+        options: [
+            "پردہ",
+            "تعلیم",
+            "شادی",
+            "کام"
+        ],
+        explanation: "سر سید نے عورتوں کے لیے تعلیم کو سب سے زیادہ ضروری بتایا۔"
+    },
+    9: {
+        question: "مخلوط زبان کس نے لکھی ہے؟",
+        options: [
+            "مولوی عبد الحق",
+            "مولانا شبلی نعمانی",
+            "ڈاکٹر وحید قریشی",
+            "فرمان فتح پوری"
+        ],
+        explanation: "مخلوط زبان مولوی عبد الحق نے لکھی ہے۔"
+    },
+    10: {
+        question: "مخلوط زبان سبق میں کس چیز پر زور دیا گیا ہے؟",
+        options: [
+            "انگریزی زبان کی اہمیت",
+            "اردو زبان کی ترقی",
+            "ہندی زبان کی خوبصورتی",
+            "زبانوں کی ملاوٹ"
+        ],
+        explanation: "مخلوط زبان سبق میں زبانوں کی ملاوٹ اور اردو کی ترقی پر زور دیا گیا ہے۔"
+    },
+    11: {
+        question: "ماحول بچائیے کس مضمون کا حصہ ہے؟",
+        options: [
+            "سائنس کے مضامین",
+            "سماجی مسائل کے مضامین",
+            "ادب کے مضامین",
+            "تاریخ کے مضامین"
+        ],
+        explanation: "ماحول بچائیے سماجی مسائل کے مضامین میں آتا ہے۔"
+    },
+    12: {
+        question: "ماحول کو بچانے کے لیے سب سے اہم کام کیا ہے؟",
+        options: [
+            "فیکٹریاں بند کرنا",
+            "کاریں بند کرنا",
+            "شجرکاری",
+            "صفائی"
+        ],
+        explanation: "ماحول کو بچانے کے لیے شجرکاری سب سے اہم کام ہے۔"
+    },
+    13: {
+        question: "لائی حیات آئے کس شاعر کی غزل ہے؟",
+        options: [
+            "شیخ محمد ابراہیم ذوق",
+            "مرزا غالب",
+            "میر تقی میر",
+            "بہادر شاہ ظفر"
+        ],
+        explanation: "لائی حیات آئے شیخ محمد ابراہیم ذوق کی غزل ہے۔"
+    },
+    14: {
+        question: "ذوق کس بادشاہ کے استادی شاعر تھے؟",
+        options: [
+            "شاہ عالم",
+            "اکبر شاہ دوم",
+            "بہادر شاہ ظفر",
+            "عالمگیر دوم"
+        ],
+        explanation: "ذوق بہادر شاہ ظفر کے استادی شاعر تھے۔"
+    },
+    15: {
+        question: "ڈھونڈو گے اگر ملکوں ملکوں کس شاعر کی غزل ہے؟",
+        options: [
+            "شاد عظیم آبادی",
+            "فراق گورکھپوری",
+            "جگر مرادآبادی",
+            "حسرت موہانی"
+        ],
+        explanation: "ڈھونڈو گے اگر ملکوں ملکوں شاد عظیم آبادی کی غزل ہے۔"
+    },
+    16: {
+        question: "اس غزل کا مرکزی خیال کیا ہے؟",
+        options: [
+            "وطن کی تلاش",
+            "محبت کی تلاش",
+            "خدا کی تلاش",
+            "حقیقت کی تلاش"
+        ],
+        explanation: "اس غزل کا مرکزی خیال حقیقت اور انسانیت کی تلاش ہے۔"
+    },
+    17: {
+        question: "دنیا میری بلا جانے کس شاعر کی غزل ہے؟",
+        options: [
+            "فانی بدایونی",
+            "جوش ملیح آبادی",
+            "نظیر اکبرآبادی",
+            "داغ دہلوی"
+        ],
+        explanation: "دنیا میری بلا جانے فانی بدایونی کی غزل ہے۔"
+    },
+    18: {
+        question: "فانی بدایونی کی شاعری کا خاص رنگ کیا ہے؟",
+        options: [
+            "محبت",
+            "رندانہ",
+            "دینی",
+            "وطن پرستی"
+        ],
+        explanation: "فانی بدایونی کی شاعری کا خاص رنگ رندانہ اور زندگی سے بیزاری کا ہے۔"
+    },
+    19: {
+        question: "ادب نے دل کے تقاضے کس شاعر کی غزل ہے؟",
+        options: [
+            "یاس یگانہ چنگیزی",
+            "مجاز لکھنوی",
+            "ساحر لدھیانوی",
+            "فیض احمد فیض"
+        ],
+        explanation: "ادب نے دل کے تقاضے یاس یگانہ چنگیزی کی غزل ہے۔"
+    },
+    20: {
+        question: "یاس یگانہ چنگیزی کا اصل نام کیا تھا؟",
+        options: [
+            "مرزا یاس",
+            "احمد حسین",
+            "اصغر حسین",
+            "جاوید حسین"
+        ],
+        explanation: "یاس یگانہ چنگیزی کا اصل نام اصغر حسین تھا۔"
+    },
+    21: {
+        question: "جلوہء دربارِ دہلی کس شاعر کی نظم ہے؟",
+        options: [
+            "اکبر الہ آبادی",
+            "حفیظ جالندھری",
+            "الطاف حسین حالی",
+            "محمد اقبال"
+        ],
+        explanation: "جلوہء دربارِ دہلی اکبر الہ آبادی کی نظم ہے۔"
+    },
+    22: {
+        question: "اکبر الہ آبادی کس انداز کے شاعر تھے؟",
+        options: [
+            "رومانٹک",
+            "طنزیہ",
+            "دینی",
+            "وطن پرستانہ"
+        ],
+        explanation: "اکبر الہ آبادی طنزیہ (طنز و مزاح) انداز کے شاعر تھے۔"
+    },
+    23: {
+        question: "حقیقت حسن کس شاعر کی نظم ہے؟",
+        options: [
+            "ڈاکٹر علامہ اقبال",
+            "مرزا غالب",
+            "فیض احمد فیض",
+            "احمد ندیم قاسمی"
+        ],
+        explanation: "حقیقت حسن ڈاکٹر علامہ اقبال کی نظم ہے۔"
+    },
+    24: {
+        question: "اقبال نے اصل حسن کیا بتایا ہے؟",
+        options: [
+            "چہرہ",
+            "آنکھیں",
+            "اخلاق",
+            "تعلیم"
+        ],
+        explanation: "اقبال نے اصل حسن اخلاق اور باطنیت کو بتایا ہے۔"
+    },
+    25: {
+        question: "او دیس سے آنے والے کس شاعر کی نظم ہے؟",
+        options: [
+            "اختر شیرانی",
+            "ساحر لدھیانوی",
+            "مجروح سلطانپوری",
+            "کیفی اعظمی"
+        ],
+        explanation: "او دیس سے آنے والے اختر شیرانی کی نظم ہے۔"
+    },
+    26: {
+        question: "اختر شیرانی کس جماعت کے شاعر تھے؟",
+        options: [
+            "حلقہ ارباب ذوق",
+            "بزم اقبال",
+            "انجمن ترقی پسند",
+            "حلقہ ارباب سخن"
+        ],
+        explanation: "اختر شیرانی حلقہ ارباب سخن کے شاعر تھے۔"
+    },
+    27: {
+        question: "میر ببر علی انیس کس فن سے تعلق رکھتے تھے؟",
+        options: [
+            "غزل",
+            "مرثیہ",
+            "قصیدہ",
+            "مثنوی"
+        ],
+        explanation: "میر ببر علی انیس مرثیہ نگاری کے فن سے تعلق رکھتے تھے۔"
+    },
+    28: {
+        question: "انیس کس شہر سے تعلق رکھتے تھے؟",
+        options: [
+            "لکھنؤ",
+            "دہلی",
+            "فیض آباد",
+            "حیدرآباد"
+        ],
+        explanation: "انیس لکھنؤ سے تعلق رکھتے تھے۔"
+    },
+    29: {
+        question: "تیلوک چند محروم کس زبان کے شاعر تھے؟",
+        options: [
+            "اردو",
+            "فارسی",
+            "ہندی",
+            "پنجابی"
+        ],
+        explanation: "تیلوک چند محروم اردو زبان کے شاعر تھے۔"
+    },
+    30: {
+        question: "محروم کا خاص مضمون کیا تھا؟",
+        options: [
+            "محبت",
+            "وطن پرستی",
+            "انسانیت",
+            "مذہبی"
+        ],
+        explanation: "محروم کا خاص مضمون مذہبی اور روحانیت تھا۔"
+    },
+    31: {
+        question: "'کتاب' کیا ہے؟",
+        options: [
+            "اسم",
+            "صفت",
+            "فعل",
+            "ضمیر"
+        ],
+        explanation: "'کتاب' اسم ہے۔"
+    },
+    32: {
+        question: "اسم کی کتنی اقسام ہیں؟",
+        options: [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        explanation: "اسم کی دو اقسام ہیں: اسم ذات اور اسم صفت۔"
+    },
+    33: {
+        question: "'وہ پڑھتا ہے' میں 'پڑھتا' کیا ہے؟",
+        options: [
+            "اسم",
+            "فعل حال",
+            "فعل ماضی",
+            "فعل مستقبل"
+        ],
+        explanation: "'پڑھتا' فعل حال ہے۔"
+    },
+    34: {
+        question: "فعل کے تینوں اصول کیا ہیں؟",
+        options: [
+            "ماضی، حال، مستقبل",
+            "ذات، صفت، ضمیر",
+            "مفرد، تذکیر، تانیث",
+            "معرفہ، نکرہ، مشرح"
+        ],
+        explanation: "فعل کے تین اصول ہیں: ماضی، حال، مستقبل۔"
+    },
+    35: {
+        question: "'اور' کیا ہے؟",
+        options: [
+            "حرف عطف",
+            "حرف جر",
+            "حرف شرط",
+            "حرف ندا"
+        ],
+        explanation: "'اور' حرف عطف ہے۔"
+    },
+    36: {
+        question: "حرف کی تقسیم کس بنیاد پر ہوتی ہے؟",
+        options: [
+            "معنی کے اعتبار سے",
+            "لفظ کے اعتبار سے",
+            "حرکت کے اعتبار سے",
+            "جملے میں جگہ کے اعتبار سے"
+        ],
+        explanation: "حرف کی تقسیم معنی کے اعتبار سے ہوتی ہے۔"
+    },
+    37: {
+        question: "درخواست کس چیز کے لیے لکھی جاتی ہے؟",
+        options: [
+            "معلومات کے لیے",
+            "اجازت کے لیے",
+            "شکایت کے لیے",
+            "ان سب کے لیے"
+        ],
+        explanation: "درخواست معلومات، اجازت، شکایت وغیرہ کے لیے لکھی جاتی ہے۔"
+    },
+    38: {
+        question: "خط کی عام تقسیم کیا ہے؟",
+        options: [
+            "دوستی اور رشتہ داری",
+            "شکایت اور درخواست",
+            "رسمی اور غیر رسمی",
+            "تجارتی اور ذاتی"
+        ],
+        explanation: "خط کی عام تقسیم رسمی اور غیر رسمی ہے۔"
+    },
+    39: {
+        question: "مضمون لکھنے کا عام طریقہ کیا ہے؟",
+        options: [
+            "پہلا مقدمہ، پھر اصل مضمون، پھر خاتمہ",
+            "سیدھا اصل مضمون لکھنا",
+            "صرف سوال جواب",
+            "خواتین کے لیے الگ طریقہ"
+        ],
+        explanation: "مضمون لکھنے کا عام طریقہ ہے: پہلا مقدمہ، پھر اصل مضمون، پھر خاتمہ۔"
+    },
+    40: {
+        question: "غیر درسی اقتباس سے کیا مراد ہے؟",
+        options: [
+            "جو کتاب میں نہیں ہے",
+            "جو کورس سے باہر ہے",
+            "جو خود سے لکھا گیا ہے",
+            "جو دوسری زبان سے ترجمہ ہے"
+        ],
+        explanation: "غیر درسی اقتباس سے مراد ہے کورس سے باہر کا کوئی حصہ جو پڑھایا جا رہا ہو۔"
     }
 };
 
-// Load all progress from localStorage
-function loadAllProgress() {
-    Object.keys(mcqData).forEach(chapterId => {
-        const savedProgress = localStorage.getItem(`progress_${chapterId}`);
-        const savedScore = localStorage.getItem(`score_${chapterId}`);
-
-        if (savedProgress) {
-            const progress = JSON.parse(savedProgress);
-            updateProgressFromStorage(chapterId, progress);
-        }
-
-        if (savedScore) {
-            const score = JSON.parse(savedScore);
-            displaySavedScore(chapterId, score);
-        }
-    });
-}
-
-// Create MCQ pages for all chapters
-function createMCQPages() {
-    const container = document.getElementById('mcqPagesContainer');
-
-    Object.keys(mcqData).forEach(chapterId => {
-        const chapter = mcqData[chapterId];
-
-        const mcqPage = document.createElement('div');
-        mcqPage.className = 'mcq-page';
-        mcqPage.id = `page-${chapterId}`;
-
-        // Create header with progress tracking
-        mcqPage.innerHTML = `
-            <div class="mcq-header">
-                <button class="back-btn" onclick="goBackToMenu()" aria-label="Go back to chapters">
-                    <i class="fas fa-arrow-left"></i> Back to Chapters
-                </button>
-                <h2 class="chapter-title">${chapter.title}</h2>
-                <div class="progress-info">
-                    <div>Progress: <span id="progress-${chapterId}">0%</span></div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progressFill-${chapterId}"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mcq-container" id="container-${chapterId}">
-                <!-- Questions will be inserted here -->
-            </div>
-
-            <div class="results-panel hidden" id="results-${chapterId}">
-                <div class="score-circle">
-                    <div class="score-percent" id="scorePercent-${chapterId}">0%</div>
-                    <div class="score-text">Score</div>
-                </div>
-                <h3>Chapter Performance</h3>
-                <div class="results-details">
-                    <div class="result-stat correct">
-                        <div class="number" id="correctCount-${chapterId}">0</div>
-                        <div>Correct</div>
-                    </div>
-                    <div class="result-stat wrong">
-                        <div class="number" id="wrongCount-${chapterId}">0</div>
-                        <div>Wrong</div>
-                    </div>
-                    <div class="result-stat attempted">
-                        <div class="number" id="attemptedCount-${chapterId}">0</div>
-                        <div>Attempted</div>
-                    </div>
-                </div>
-                <button class="back-btn" style="margin-top: 20px;" onclick="resetChapter('${chapterId}')" aria-label="Try this chapter again">
-                    <i class="fas fa-redo"></i> Try Again
-                </button>
-            </div>
-        `;
-
-        container.appendChild(mcqPage);
-
-        // Create questions for this chapter
-        createQuestionsForChapter(chapterId);
-    });
-}
-
-// Create questions for a specific chapter
-function createQuestionsForChapter(chapterId) {
-    const container = document.getElementById(`container-${chapterId}`);
-    const chapter = mcqData[chapterId];
-
-    chapter.questions.forEach((question, index) => {
-        const questionElement = document.createElement('div');
-        questionElement.className = 'mcq-item';
-        questionElement.id = `q-${chapterId}-${index}`;
-        questionElement.innerHTML = `
-            <div class="question">Q${index + 1}. ${question.question}</div>
-            <div class="options-container" role="radiogroup" aria-label="Question ${index + 1} options">
-                ${question.options.map((option, optIndex) => `
-                    <div class="option" data-answer="${optIndex}" role="radio" aria-checked="false" tabindex="0">
-                        <input type="radio" id="opt-${chapterId}-${index}-${optIndex}" name="question-${chapterId}-${index}">
-                        <label for="opt-${chapterId}-${index}-${optIndex}">${option}</label>
-                    </div>
-                `).join('')}
-            </div>
-        `;
-
-        container.appendChild(questionElement);
-
-        // Load saved answer if exists
-        loadSavedAnswer(chapterId, index);
-
-        // Add event listeners to options
-        const options = questionElement.querySelectorAll('.option');
-        options.forEach(option => {
-            const radio = option.querySelector('input[type="radio"]');
-
-            option.addEventListener('click', (e) => {
-                e.preventDefault();
-                playSound('click');
-
-                // Uncheck all other radios in this group
-                options.forEach(otherOption => {
-                    if (otherOption !== option) {
-                        otherOption.querySelector('input[type="radio"]').checked = false;
-                        otherOption.classList.remove('selected');
-                        otherOption.setAttribute('aria-checked', 'false');
-                    }
-                });
-
-                // Check this radio
-                radio.checked = true;
-                option.classList.add('selected');
-                option.setAttribute('aria-checked', 'true');
-
-                const selectedAnswer = parseInt(option.dataset.answer);
-                checkAnswer(chapterId, index, selectedAnswer);
-                saveAnswer(chapterId, index, selectedAnswer);
-                updateProgress(chapterId);
-            });
-
-            // Keyboard navigation
-            option.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    option.click();
-                }
-            });
-
-            // Remove blue highlight
-            option.addEventListener('mousedown', function(e) {
-                e.preventDefault();
-            });
-
-            option.addEventListener('touchstart', function(e) {
-                e.preventDefault();
-            });
-        });
-    });
-}
-
-// Load saved answer for a question
-function loadSavedAnswer(chapterId, questionIndex) {
-    const savedAnswers = JSON.parse(localStorage.getItem(`answers_${chapterId}`) || '{}');
-    const savedAnswer = savedAnswers[questionIndex];
-
-    if (savedAnswer !== undefined) {
-        const questionElement = document.getElementById(`q-${chapterId}-${questionIndex}`);
-        const options = questionElement.querySelectorAll('.option');
-
-        // Restore the saved answer
-        const option = options[savedAnswer];
-        if (option) {
-            const radio = option.querySelector('input[type="radio"]');
-            radio.checked = true;
-            option.classList.add('selected');
-            option.setAttribute('aria-checked', 'true');
-
-            // Check if it was correct/wrong
-            const question = mcqData[chapterId].questions[questionIndex];
-            const isCorrect = savedAnswer === question.correctAnswer;
-
-            if (isCorrect) {
-                questionElement.classList.add('correct');
-                options[question.correctAnswer].classList.add('correct-answer');
-            } else {
-                questionElement.classList.add('wrong');
-                options[savedAnswer].classList.add('wrong-answer');
-                options[question.correctAnswer].classList.add('correct-answer');
-            }
-
-            // Disable radios after answering
-            options.forEach(opt => {
-                opt.querySelector('input[type="radio"]').disabled = true;
-            });
-        }
-    }
-}
-
-// Save answer to localStorage
-function saveAnswer(chapterId, questionIndex, answer) {
-    const savedAnswers = JSON.parse(localStorage.getItem(`answers_${chapterId}`) || '{}');
-    savedAnswers[questionIndex] = answer;
-    localStorage.setItem(`answers_${chapterId}`, JSON.stringify(savedAnswers));
-}
-
-// Save progress to localStorage
-function saveProgress(chapterId, progress) {
-    localStorage.setItem(`progress_${chapterId}`, JSON.stringify(progress));
-}
-
-// Save score to localStorage
-function saveScore(chapterId, scoreData) {
-    localStorage.setItem(`score_${chapterId}`, JSON.stringify(scoreData));
-}
-
-// Check the answer for a question
-function checkAnswer(chapterId, questionIndex, selectedAnswer) {
-    const question = mcqData[chapterId].questions[questionIndex];
-    const questionElement = document.getElementById(`q-${chapterId}-${questionIndex}`);
-    const options = questionElement.querySelectorAll('.option');
-
-    // Reset all options styling
-    options.forEach(option => {
-        option.classList.remove('correct-answer', 'wrong-answer');
-    });
-
-    // Mark correct answer in green
-    options[question.correctAnswer].classList.add('correct-answer');
-
-    // Mark selected answer if wrong
-    if (selectedAnswer !== question.correctAnswer) {
-        options[selectedAnswer].classList.add('wrong-answer');
-        questionElement.classList.add('wrong');
-        playSound('wrong');
-    } else {
-        questionElement.classList.add('correct');
-        playSound('correct');
-    }
-
-    // Disable all radios after answering
-    options.forEach(option => {
-        option.querySelector('input[type="radio"]').disabled = true;
-    });
-}
-
-// Update progress for a chapter
-function updateProgress(chapterId) {
-    const chapter = mcqData[chapterId];
-    let answeredCount = 0;
-    let correctCount = 0;
-
-    chapter.questions.forEach((question, index) => {
-        const questionElement = document.getElementById(`q-${chapterId}-${index}`);
-        const selectedRadio = questionElement.querySelector('input[type="radio"]:checked');
-        if (selectedRadio) {
-            answeredCount++;
-            if (questionElement.classList.contains('correct')) {
-                correctCount++;
-            }
-        }
-    });
-
-    const progress = (answeredCount / chapter.questions.length) * 100;
-    document.getElementById(`progress-${chapterId}`).textContent = `${Math.round(progress)}%`;
-    document.getElementById(`progressFill-${chapterId}`).style.width = `${progress}%`;
-
-    // Save progress
-    saveProgress(chapterId, {
-        answeredCount,
-        totalQuestions: chapter.questions.length,
-        progress: Math.round(progress)
-    });
-
-    // Show results if all questions answered
-    if (answeredCount === chapter.questions.length) {
-        setTimeout(() => {
-            playSound('success');
-            showResults(chapterId, correctCount);
-        }, 500);
-    }
-}
-
-// Update progress from storage
-function updateProgressFromStorage(chapterId, progress) {
-    if (!progress) return;
-
-    document.getElementById(`progress-${chapterId}`).textContent = `${progress.progress}%`;
-    document.getElementById(`progressFill-${chapterId}`).style.width = `${progress.progress}%`;
-}
-
-// Display saved score
-function displaySavedScore(chapterId, score) {
-    if (!score) return;
-
-    document.getElementById(`scorePercent-${chapterId}`).textContent = `${score.score}%`;
-    document.getElementById(`correctCount-${chapterId}`).textContent = score.correctCount;
-    document.getElementById(`wrongCount-${chapterId}`).textContent = score.wrongCount;
-    document.getElementById(`attemptedCount-${chapterId}`).textContent = score.totalQuestions;
-}
-
-// Show results for a chapter
-function showResults(chapterId, correctCount) {
-    const chapter = mcqData[chapterId];
-    let wrongCount = chapter.questions.length - correctCount;
-
-    const score = Math.round((correctCount / chapter.questions.length) * 100);
-
-    document.getElementById(`scorePercent-${chapterId}`).textContent = `${score}%`;
-    document.getElementById(`correctCount-${chapterId}`).textContent = correctCount;
-    document.getElementById(`wrongCount-${chapterId}`).textContent = wrongCount;
-    document.getElementById(`attemptedCount-${chapterId}`).textContent = chapter.questions.length;
-
-    document.getElementById(`results-${chapterId}`).classList.remove('hidden');
-
-    // Save score
-    saveScore(chapterId, {
-        score: score,
-        correctCount: correctCount,
-        wrongCount: wrongCount,
-        totalQuestions: chapter.questions.length,
-        timestamp: new Date().toISOString()
-    });
-
-    // Scroll to results
-    setTimeout(() => {
-        document.getElementById(`results-${chapterId}`).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }, 300);
-}
-
-// Reset a chapter (try again)
-function resetChapter(chapterId) {
-    playSound('click');
-
-    const chapter = mcqData[chapterId];
-
-    // Clear saved data
-    localStorage.removeItem(`answers_${chapterId}`);
-    localStorage.removeItem(`progress_${chapterId}`);
-    localStorage.removeItem(`score_${chapterId}`);
-
-    // Reset all questions
-    chapter.questions.forEach((question, index) => {
-        const questionElement = document.getElementById(`q-${chapterId}-${index}`);
-        questionElement.classList.remove('correct', 'wrong');
-
-        const options = questionElement.querySelectorAll('.option');
-        options.forEach(option => {
-            option.classList.remove('selected', 'correct-answer', 'wrong-answer');
-            const radio = option.querySelector('input[type="radio"]');
-            radio.checked = false;
-            radio.disabled = false;
-            option.setAttribute('aria-checked', 'false');
-        });
-    });
-
-    // Hide results
-    document.getElementById(`results-${chapterId}`).classList.add('hidden');
-
-    // Reset progress
-    document.getElementById(`progress-${chapterId}`).textContent = '0%';
-    document.getElementById(`progressFill-${chapterId}`).style.width = '0%';
-
-    // Scroll to top of chapter
-    setTimeout(() => {
-        document.getElementById(`container-${chapterId}`).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }, 300);
+// Function to get Urdu content
+function getUrduContent(questionId) {
+    return urduTranslations[questionId] || null;
 }
